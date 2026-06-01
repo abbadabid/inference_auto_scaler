@@ -1,0 +1,7 @@
+# Use compatible versions for 2026
+torch
+torchvision
+aiohttp
+opencv-python
+requests
+pillow

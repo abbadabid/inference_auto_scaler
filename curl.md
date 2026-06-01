@@ -1,0 +1,1 @@
+curl -X POST http://localhost:5000/predict -F "image=@C:\Users\HP\Desktop\class task\image.jpg"
