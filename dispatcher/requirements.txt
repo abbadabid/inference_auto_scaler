@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+requests
+httpx
+opencv-python-headless
+numpy
+python-multipart
+prometheus-client
