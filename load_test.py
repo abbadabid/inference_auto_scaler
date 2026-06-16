@@ -6,7 +6,7 @@ import csv
 from concurrent.futures import ThreadPoolExecutor
 
 # ── Config ───────────────────────────────────────────────────────────────────
-DISPATCHER_URL = "http://127.0.0.1:51298/predict"
+DISPATCHER_URL = "http://127.0.0.1:49859/predict"
 WORKLOAD_FILE  = "workload.txt"
 IMAGE_DIR      = "./test_images"
 RESULTS_FILE   = "results.csv"

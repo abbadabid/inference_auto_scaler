@@ -7,29 +7,30 @@ config.load_incluster_config()
 apps_v1 = client.AppsV1Api()
 
 # Configuration
-PROMETHEUS_URL = "http://prometheus-kube-prometheus-prometheus.monitoring:9090"
-DEPLOYMENT_NAME = "resnet-deployment"
-NAMESPACE = "default"
-MIN_REPLICAS = 1
-MAX_REPLICAS = 6
-INTERVAL = 2
+PROMETHEUS_URL      = "http://prometheus-kube-prometheus-prometheus.monitoring:9090"
+DISPATCHER_FALLBACK = "http://dispatcher-service:5000/metrics/json"
+DEPLOYMENT_NAME     = "resnet-deployment"
+NAMESPACE           = "default"
+MIN_REPLICAS        = 1
+MAX_REPLICAS        = 6
+INTERVAL            = 5  # check every 5s; fallback to dispatcher when Prometheus is slow
 
 # Thresholds
-SCALE_UP_QUEUE_THRESHOLD = 2
-SCALE_UP_LATENCY_THRESHOLD = 0.45
-SCALE_DOWN_LATENCY_THRESHOLD = 0.35
+SCALE_UP_QUEUE_THRESHOLD    = 2
+SCALE_UP_LATENCY_THRESHOLD  = 0.45  # scale up if p99 > 0.45s
+SCALE_DOWN_LATENCY_THRESHOLD = 0.35  # scale down if p99 < 0.35s
 
 # Cooldown tracking
-last_scale_up_time = 0
+last_scale_up_time   = 0
 last_scale_down_time = 0
-SCALE_UP_COOLDOWN = 15
-SCALE_DOWN_COOLDOWN = 30
+SCALE_UP_COOLDOWN    = 15  # wait 15s before scaling up again
+SCALE_DOWN_COOLDOWN  = 30  # wait 30s before scaling down again
 
-def query_prometheus(query):
+def query_prometheus(promql):
     try:
         response = requests.get(
             f"{PROMETHEUS_URL}/api/v1/query",
-            params={"query": query},
+            params={"query": promql},
             timeout=5
         )
         result = response.json()["data"]["result"]
@@ -37,12 +38,24 @@ def query_prometheus(query):
             return float(result[0]["value"][1])
         return 0.0
     except Exception as e:
-        print(f"Prometheus query error: {e}")
-        return 0.0
+        print(f"Prometheus query error ({promql}): {e}")
+        return None  # signals fetch failure
 
 def get_realtime_metrics():
     queue_length = query_prometheus("dispatcher_queue_length")
-    p99_latency = query_prometheus("dispatcher_p99_latency_seconds")
+    p99_latency  = query_prometheus("dispatcher_p99_latency_seconds")
+
+    # Fallback to dispatcher /metrics/json when Prometheus is unavailable
+    if queue_length is None or p99_latency is None:
+        try:
+            response = requests.get(DISPATCHER_FALLBACK, timeout=3)
+            data = response.json()
+            print("Using dispatcher fallback for metrics")
+            return data.get("queue_length", 0), data.get("p99_latency", 0.0)
+        except Exception as e:
+            print(f"Dispatcher fallback also failed: {e}")
+            return None, None
+
     return queue_length, p99_latency
 
 def get_current_replicas():
@@ -78,13 +91,18 @@ def autoscaler_loop():
 
         print(f"\n--- Autoscaler Check ---")
         print(f"Queue length: {queue_length}")
-        print(f"P99 latency: {p99_latency}s")
+        print(f"P99 latency: {p99_latency if p99_latency is None else f'{p99_latency}s'}")
         print(f"Current replicas: {current_replicas}")
+
+        # Skip scaling if both sources failed
+        if queue_length is None or p99_latency is None:
+            print("Skipping scaling decision: metrics unavailable")
+            time.sleep(INTERVAL)
+            continue
 
         # ── Scale UP logic ──────────────────────────────
         if queue_length > SCALE_UP_QUEUE_THRESHOLD or p99_latency > SCALE_UP_LATENCY_THRESHOLD:
             if now - last_scale_up_time > SCALE_UP_COOLDOWN:
-                # Aggressive scale up for heavy load
                 if p99_latency > 1.0 or queue_length > 5:
                     target_replicas = current_replicas + 3
                 else:

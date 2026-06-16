@@ -35,6 +35,18 @@ after that rollout and restart the deployment
 
  kubectl scale deployment resnet-deployment --replicas=1
 
+- minikube addons enable metrics-server -- enable the metrics server, hap needs this 
+
+- kubectl get hpa --verify HPA is active
+
+- kubectl delete hpa resnet-hpa -- deleting the hpa
+
+- kubectl scale deployment resnet-deployment --replicas=1
+
+- kubectl scale deployment autoscaler-deployment --replicas=1 -- re-enable custom autoscaler
+
+- kubectl port-forward -n monitoring svc/prometheus-kube-prometheus-prometheus 9090:9090 -- port forwarding to see the results in browser
+
 
 
 
