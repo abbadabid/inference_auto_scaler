@@ -7,7 +7,7 @@ config.load_incluster_config()
 apps_v1 = client.AppsV1Api()
 
 # Configuration
-DISPATCHER_METRICS_URL = "http://dispatcher-service:5000/metrics/json"
+PROMETHEUS_URL = "http://prometheus-kube-prometheus-prometheus.monitoring:9090"
 DEPLOYMENT_NAME = "resnet-deployment"
 NAMESPACE = "default"
 MIN_REPLICAS = 1
@@ -16,23 +16,34 @@ INTERVAL = 2
 
 # Thresholds
 SCALE_UP_QUEUE_THRESHOLD = 2
-SCALE_UP_LATENCY_THRESHOLD = 0.45   # scale up if p99 > 0.45s
-SCALE_DOWN_LATENCY_THRESHOLD = 0.35  # scale down if p99 < 0.3s
+SCALE_UP_LATENCY_THRESHOLD = 0.45
+SCALE_DOWN_LATENCY_THRESHOLD = 0.35
 
 # Cooldown tracking
 last_scale_up_time = 0
 last_scale_down_time = 0
-SCALE_UP_COOLDOWN = 15    # wait 15s before scaling up again
-SCALE_DOWN_COOLDOWN = 30  # wait 30s before scaling down again
+SCALE_UP_COOLDOWN = 15
+SCALE_DOWN_COOLDOWN = 30
+
+def query_prometheus(query):
+    try:
+        response = requests.get(
+            f"{PROMETHEUS_URL}/api/v1/query",
+            params={"query": query},
+            timeout=5
+        )
+        result = response.json()["data"]["result"]
+        if result:
+            return float(result[0]["value"][1])
+        return 0.0
+    except Exception as e:
+        print(f"Prometheus query error: {e}")
+        return 0.0
 
 def get_realtime_metrics():
-    try:
-        response = requests.get(DISPATCHER_METRICS_URL, timeout=5)
-        data = response.json()
-        return data.get("queue_length", 0), data.get("p99_latency", 0.0)
-    except Exception as e:
-        print(f"Failed to fetch metrics from dispatcher: {e}")
-        return 0, 0.0
+    queue_length = query_prometheus("dispatcher_queue_length")
+    p99_latency = query_prometheus("dispatcher_p99_latency_seconds")
+    return queue_length, p99_latency
 
 def get_current_replicas():
     try:
@@ -92,8 +103,8 @@ def autoscaler_loop():
                 print(f"Scale up cooldown: {remaining}s remaining")
 
         # ── Scale DOWN logic ────────────────────────────
-        elif (queue_length == 0 and 
-              p99_latency < SCALE_DOWN_LATENCY_THRESHOLD and 
+        elif (queue_length == 0 and
+              p99_latency < SCALE_DOWN_LATENCY_THRESHOLD and
               current_replicas > MIN_REPLICAS):
             if now - last_scale_down_time > SCALE_DOWN_COOLDOWN:
                 target_replicas = current_replicas - 1
