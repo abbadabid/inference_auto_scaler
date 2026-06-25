@@ -61,6 +61,12 @@ The custom autoscaler uses queue length and p99 latency (via Prometheus) to outp
 └── workload.txt          Requests/second workload pattern
 ```
 
+> **Note:** The `test_images/` folder is not included in the submission due to file size.
+> Before running the load test, clone the ImageNet sample images repo:
+> ```bash
+> git clone https://github.com/EliSchwartz/imagenet-sample-images.git test_images
+> ```
+
 ---
 
 ## How to Run
