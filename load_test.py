@@ -5,14 +5,17 @@ import os
 import csv
 import subprocess
 import threading
+import requests
 from concurrent.futures import ThreadPoolExecutor
 
 # ── Config ───────────────────────────────────────────────────────────────────
-DISPATCHER_URL = "http://127.0.0.1:64826/predict"
-WORKLOAD_FILE  = "workload.txt"
-IMAGE_DIR      = "./test_images"
-RESULTS_FILE   = "hpa90_results.csv"
-REPLICAS_FILE  = RESULTS_FILE.replace("results", "replicas")  # e.g. replicas_hpa90.csv
+DISPATCHER_URL    = "http://127.0.0.1:55511/predict"
+DISPATCHER_METRICS_URL = DISPATCHER_URL.replace("/predict", "/metrics/json")
+WORKLOAD_FILE     = "workload.txt"
+IMAGE_DIR         = "./test_images"
+RESULTS_FILE      = "hpa90_autoscaler_results.csv"
+REPLICAS_FILE     = RESULTS_FILE.replace("results", "replicas")
+SERVERSIDE_FILE   = RESULTS_FILE.replace("results", "serverside")
 
 # ── Load workload ─────────────────────────────────────────────────────────────
 with open(WORKLOAD_FILE) as f:
@@ -50,7 +53,21 @@ def _track_replicas(start_time):
     while not _stop_tracking.is_set():
         elapsed = round(time.time() - start_time)
         replica_records.append({"second": elapsed, "replicas": _get_replicas()})
-        time.sleep(5)  # sample every 5 seconds
+        time.sleep(5)
+
+# ── Server-side latency tracking (background thread) ─────────────────────────
+serverside_records = []
+
+def _track_serverside(start_time):
+    while not _stop_tracking.is_set():
+        elapsed = round(time.time() - start_time)
+        try:
+            data = requests.get(DISPATCHER_METRICS_URL, timeout=3).json()
+            p99 = data.get("p99_latency", 0.0)
+        except Exception:
+            p99 = None
+        serverside_records.append({"second": elapsed, "p99_latency": p99})
+        time.sleep(5)
 
 # ── Single request function ───────────────────────────────────────────────────
 def send_request(second: int) -> dict:
@@ -88,6 +105,8 @@ print(f"Targeting: {DISPATCHER_URL}\n")
 test_start = time.time()
 tracker = threading.Thread(target=_track_replicas, args=(test_start,), daemon=True)
 tracker.start()
+ss_tracker = threading.Thread(target=_track_serverside, args=(test_start,), daemon=True)
+ss_tracker.start()
 
 with ThreadPoolExecutor(max_workers=150) as executor:
     for second, target_rps in enumerate(WORKLOAD):
@@ -149,3 +168,10 @@ with open(REPLICAS_FILE, "w", newline="") as f:
     writer.writeheader()
     writer.writerows(replica_records)
 print(f"Replica records saved to {REPLICAS_FILE}")
+
+# ── Save server-side latency ──────────────────────────────────────────────────
+with open(SERVERSIDE_FILE, "w", newline="") as f:
+    writer = csv.DictWriter(f, fieldnames=["second", "p99_latency"])
+    writer.writeheader()
+    writer.writerows(serverside_records)
+print(f"Server-side latency saved to {SERVERSIDE_FILE}")
