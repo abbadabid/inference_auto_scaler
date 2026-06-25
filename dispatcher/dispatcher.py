@@ -19,7 +19,7 @@ RESNET_URL = "http://resnet-service:8001/infer"
 request_queue = asyncio.Queue()
 
 # Metrics storage
-latencies = deque(maxlen=100)
+latencies = deque(maxlen=100) #p99 is calculated from this
 total_requests_count = 0
 
 # Prometheus metrics
@@ -104,8 +104,8 @@ async def get_metrics_prometheus():
 
 @app.on_event("startup")
 async def startup_event():
-    # Start 4 parallel workers to process queue
-    for _ in range(4):
+    # Start 7 parallel workers to process queue
+    for _ in range(7):
         asyncio.create_task(worker())
 
 if __name__ == '__main__':

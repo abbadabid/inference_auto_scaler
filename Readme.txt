@@ -41,7 +41,7 @@ after that rollout and restart the deployment
 
 - kubectl delete hpa resnet-hpa -- deleting the hpa
 
-- kubectl scale deployment resnet-deployment --replicas=1
+- a
 
 - kubectl scale deployment autoscaler-deployment --replicas=1 -- re-enable custom autoscaler
 

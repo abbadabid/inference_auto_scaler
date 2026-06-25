@@ -122,7 +122,7 @@ def autoscaler_loop():
 
         # ── Scale DOWN logic ────────────────────────────
         elif (queue_length == 0 and
-              p99_latency < SCALE_DOWN_LATENCY_THRESHOLD and
+              0 < p99_latency < SCALE_DOWN_LATENCY_THRESHOLD and
               current_replicas > MIN_REPLICAS):
             if now - last_scale_down_time > SCALE_DOWN_COOLDOWN:
                 target_replicas = current_replicas - 1

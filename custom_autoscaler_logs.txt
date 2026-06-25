@@ -1,0 +1,1761 @@
+Starting Autoscaler...
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.0s
+Current replicas: 1
+No scaling needed
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.0s
+Current replicas: 1
+No scaling needed
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.0s
+Current replicas: 1
+No scaling needed
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.0s
+Current replicas: 1
+No scaling needed
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.0s
+Current replicas: 1
+No scaling needed
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.0s
+Current replicas: 1
+No scaling needed
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.0s
+Current replicas: 1
+No scaling needed
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.0s
+Current replicas: 1
+No scaling needed
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.0s
+Current replicas: 1
+No scaling needed
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.0s
+Current replicas: 1
+No scaling needed
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.0s
+Current replicas: 1
+No scaling needed
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.0s
+Current replicas: 1
+No scaling needed
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.0s
+Current replicas: 1
+No scaling needed
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.0s
+Current replicas: 1
+No scaling needed
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.0s
+Current replicas: 1
+No scaling needed
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.0s
+Current replicas: 1
+No scaling needed
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.0s
+Current replicas: 1
+No scaling needed
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.0s
+Current replicas: 1
+No scaling needed
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.0s
+Current replicas: 1
+No scaling needed
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.28046933400037233s
+Current replicas: 1
+No scaling needed
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.28046933400037233s
+Current replicas: 1
+No scaling needed
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.28046933400037233s
+Current replicas: 1
+No scaling needed
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.28046933400037233s
+Current replicas: 1
+No scaling needed
+
+--- Autoscaler Check ---
+Queue length: 4.0
+P99 latency: 0.22967991699988488s
+Current replicas: 1
+Scaling UP: 1 → 2
+Scaled to 2 replicas
+
+--- Autoscaler Check ---
+Queue length: 4.0
+P99 latency: 0.22967991699988488s
+Current replicas: 2
+Scale up cooldown: 9s remaining
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.34878866700455546s
+Current replicas: 2
+Scaling DOWN: 2 → 1
+Scaled to 1 replicas
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.34878866700455546s
+Current replicas: 1
+No scaling needed
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.34878866700455546s
+Current replicas: 1
+No scaling needed
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.19879120899713598s
+Current replicas: 1
+No scaling needed
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.19879120899713598s
+Current replicas: 1
+No scaling needed
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.19879120899713598s
+Current replicas: 1
+No scaling needed
+
+--- Autoscaler Check ---
+Queue length: 3.0
+P99 latency: 0.22301458299625665s
+Current replicas: 1
+Scaling UP: 1 → 2
+Scaled to 2 replicas
+
+--- Autoscaler Check ---
+Queue length: 3.0
+P99 latency: 0.22301458299625665s
+Current replicas: 2
+Scale up cooldown: 9s remaining
+
+--- Autoscaler Check ---
+Queue length: 3.0
+P99 latency: 0.22301458299625665s
+Current replicas: 2
+Scale up cooldown: 4s remaining
+
+--- Autoscaler Check ---
+Queue length: 1.0
+P99 latency: 0.25373041699640453s
+Current replicas: 2
+No scaling needed
+
+--- Autoscaler Check ---
+Queue length: 1.0
+P99 latency: 0.25373041699640453s
+Current replicas: 2
+No scaling needed
+
+--- Autoscaler Check ---
+Queue length: 1.0
+P99 latency: 0.25373041699640453s
+Current replicas: 2
+No scaling needed
+
+--- Autoscaler Check ---
+Queue length: 3.0
+P99 latency: 0.18138979199284222s
+Current replicas: 2
+Scaling UP: 2 → 3
+Scaled to 3 replicas
+
+--- Autoscaler Check ---
+Queue length: 3.0
+P99 latency: 0.18138979199284222s
+Current replicas: 3
+Scale up cooldown: 9s remaining
+
+--- Autoscaler Check ---
+Queue length: 3.0
+P99 latency: 0.18138979199284222s
+Current replicas: 3
+Scale up cooldown: 4s remaining
+
+--- Autoscaler Check ---
+Queue length: 2.0
+P99 latency: 0.22358775000611786s
+Current replicas: 3
+No scaling needed
+
+--- Autoscaler Check ---
+Queue length: 2.0
+P99 latency: 0.22358775000611786s
+Current replicas: 3
+No scaling needed
+
+--- Autoscaler Check ---
+Queue length: 2.0
+P99 latency: 0.22358775000611786s
+Current replicas: 3
+No scaling needed
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.2444311250001192s
+Current replicas: 3
+Scaling DOWN: 3 → 2
+Scaled to 2 replicas
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.2444311250001192s
+Current replicas: 2
+Scale down cooldown: 24s remaining
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.2444311250001192s
+Current replicas: 2
+Scale down cooldown: 19s remaining
+
+--- Autoscaler Check ---
+Queue length: 3.0
+P99 latency: 0.2290086249995511s
+Current replicas: 2
+Scaling UP: 2 → 3
+Scaled to 3 replicas
+
+--- Autoscaler Check ---
+Queue length: 3.0
+P99 latency: 0.2290086249995511s
+Current replicas: 3
+Scale up cooldown: 9s remaining
+
+--- Autoscaler Check ---
+Queue length: 3.0
+P99 latency: 0.2290086249995511s
+Current replicas: 3
+Scale up cooldown: 4s remaining
+
+--- Autoscaler Check ---
+Queue length: 1.0
+P99 latency: 0.2498050010035513s
+Current replicas: 3
+No scaling needed
+
+--- Autoscaler Check ---
+Queue length: 1.0
+P99 latency: 0.2498050010035513s
+Current replicas: 3
+No scaling needed
+
+--- Autoscaler Check ---
+Queue length: 1.0
+P99 latency: 0.2498050010035513s
+Current replicas: 3
+No scaling needed
+
+--- Autoscaler Check ---
+Queue length: 1.0
+P99 latency: 0.25153991700790357s
+Current replicas: 3
+No scaling needed
+
+--- Autoscaler Check ---
+Queue length: 1.0
+P99 latency: 0.25153991700790357s
+Current replicas: 3
+No scaling needed
+
+--- Autoscaler Check ---
+Queue length: 1.0
+P99 latency: 0.25153991700790357s
+Current replicas: 3
+No scaling needed
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.20601445899228565s
+Current replicas: 3
+Scaling DOWN: 3 → 2
+Scaled to 2 replicas
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.20601445899228565s
+Current replicas: 2
+Scale down cooldown: 24s remaining
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.20601445899228565s
+Current replicas: 2
+Scale down cooldown: 19s remaining
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.23349737499665935s
+Current replicas: 2
+Scale down cooldown: 14s remaining
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.23349737499665935s
+Current replicas: 2
+Scale down cooldown: 9s remaining
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.23349737499665935s
+Current replicas: 2
+Scale down cooldown: 4s remaining
+
+--- Autoscaler Check ---
+Queue length: 1.0
+P99 latency: 0.249985333008226s
+Current replicas: 2
+No scaling needed
+
+--- Autoscaler Check ---
+Queue length: 1.0
+P99 latency: 0.249985333008226s
+Current replicas: 2
+No scaling needed
+
+--- Autoscaler Check ---
+Queue length: 1.0
+P99 latency: 0.249985333008226s
+Current replicas: 2
+No scaling needed
+
+--- Autoscaler Check ---
+Queue length: 5.0
+P99 latency: 0.27292025000497233s
+Current replicas: 2
+Scaling UP: 2 → 3
+Scaled to 3 replicas
+
+--- Autoscaler Check ---
+Queue length: 5.0
+P99 latency: 0.27292025000497233s
+Current replicas: 3
+Scale up cooldown: 9s remaining
+
+--- Autoscaler Check ---
+Queue length: 5.0
+P99 latency: 0.27292025000497233s
+Current replicas: 3
+Scale up cooldown: 4s remaining
+
+--- Autoscaler Check ---
+Queue length: 5.0
+P99 latency: 0.23274770799616817s
+Current replicas: 3
+Scaling UP: 3 → 4
+Scaled to 4 replicas
+
+--- Autoscaler Check ---
+Queue length: 5.0
+P99 latency: 0.23274770799616817s
+Current replicas: 4
+Scale up cooldown: 9s remaining
+
+--- Autoscaler Check ---
+Queue length: 5.0
+P99 latency: 0.23274770799616817s
+Current replicas: 4
+Scale up cooldown: 4s remaining
+
+--- Autoscaler Check ---
+Queue length: 4.0
+P99 latency: 0.25556812500872184s
+Current replicas: 4
+Scaling UP: 4 → 5
+Scaled to 5 replicas
+
+--- Autoscaler Check ---
+Queue length: 4.0
+P99 latency: 0.25556812500872184s
+Current replicas: 5
+Scale up cooldown: 9s remaining
+
+--- Autoscaler Check ---
+Queue length: 4.0
+P99 latency: 0.25556812500872184s
+Current replicas: 5
+Scale up cooldown: 4s remaining
+
+--- Autoscaler Check ---
+Queue length: 4.0
+P99 latency: 0.25556812500872184s
+Current replicas: 5
+Scaling UP: 5 → 6
+Scaled to 6 replicas
+
+--- Autoscaler Check ---
+Queue length: 17.0
+P99 latency: 0.3845608340052422s
+Current replicas: 6
+Scale up cooldown: 9s remaining
+
+--- Autoscaler Check ---
+Queue length: 17.0
+P99 latency: 0.3845608340052422s
+Current replicas: 6
+Scale up cooldown: 4s remaining
+
+--- Autoscaler Check ---
+Queue length: 17.0
+P99 latency: 0.3845608340052422s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 53.0
+P99 latency: 0.37319675099570304s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 53.0
+P99 latency: 0.37319675099570304s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 53.0
+P99 latency: 0.37319675099570304s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 53.0
+P99 latency: 0.37319675099570304s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.0s
+Current replicas: 6
+Scaling DOWN: 6 → 5
+Scaled to 5 replicas
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.0s
+Current replicas: 5
+Scale down cooldown: 24s remaining
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.0s
+Current replicas: 5
+Scale down cooldown: 19s remaining
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.0s
+Current replicas: 5
+Scale down cooldown: 14s remaining
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.0s
+Current replicas: 5
+Scale down cooldown: 9s remaining
+
+--- Autoscaler Check ---
+Queue length: 57.0
+P99 latency: 0.18246754199208226s
+Current replicas: 5
+Scaling UP: 5 → 6
+Scaled to 6 replicas
+
+--- Autoscaler Check ---
+Queue length: 57.0
+P99 latency: 0.18246754199208226s
+Current replicas: 6
+Scale up cooldown: 9s remaining
+
+--- Autoscaler Check ---
+Queue length: 57.0
+P99 latency: 0.18246754199208226s
+Current replicas: 6
+Scale up cooldown: 4s remaining
+
+--- Autoscaler Check ---
+Queue length: 48.0
+P99 latency: 0.18224283300514799s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 48.0
+P99 latency: 0.18224283300514799s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 48.0
+P99 latency: 0.18224283300514799s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 35.0
+P99 latency: 0.20344916700560134s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 35.0
+P99 latency: 0.20344916700560134s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 48.0
+P99 latency: 0.20741641698987223s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 48.0
+P99 latency: 0.20741641698987223s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 48.0
+P99 latency: 0.20741641698987223s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 48.0
+P99 latency: 0.20741641698987223s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 36.0
+P99 latency: 0.18450025000493042s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 36.0
+P99 latency: 0.18450025000493042s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 51.0
+P99 latency: 0.1776536249963101s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 51.0
+P99 latency: 0.1776536249963101s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 51.0
+P99 latency: 0.1776536249963101s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 51.0
+P99 latency: 0.1776536249963101s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.18283158300619107s
+Current replicas: 6
+Scaling DOWN: 6 → 5
+Scaled to 5 replicas
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.18283158300619107s
+Current replicas: 5
+Scale down cooldown: 24s remaining
+
+--- Autoscaler Check ---
+Queue length: 40.0
+P99 latency: 0.20919708399742376s
+Current replicas: 5
+Scaling UP: 5 → 6
+Scaled to 6 replicas
+
+--- Autoscaler Check ---
+Queue length: 40.0
+P99 latency: 0.20919708399742376s
+Current replicas: 6
+Scale up cooldown: 9s remaining
+
+--- Autoscaler Check ---
+Queue length: 40.0
+P99 latency: 0.20919708399742376s
+Current replicas: 6
+Scale up cooldown: 4s remaining
+
+--- Autoscaler Check ---
+Queue length: 40.0
+P99 latency: 0.20919708399742376s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 40.0
+P99 latency: 0.3012867920042481s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 40.0
+P99 latency: 0.3012867920042481s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 40.0
+P99 latency: 0.3012867920042481s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 41.0
+P99 latency: 0.17915633399388753s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 41.0
+P99 latency: 0.17915633399388753s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 41.0
+P99 latency: 0.17915633399388753s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.0s
+Current replicas: 6
+Scaling DOWN: 6 → 5
+Scaled to 5 replicas
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.0s
+Current replicas: 5
+Scale down cooldown: 24s remaining
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.0s
+Current replicas: 5
+Scale down cooldown: 19s remaining
+
+--- Autoscaler Check ---
+Queue length: 33.0
+P99 latency: 0.1965602919954108s
+Current replicas: 5
+Scaling UP: 5 → 6
+Scaled to 6 replicas
+
+--- Autoscaler Check ---
+Queue length: 33.0
+P99 latency: 0.1965602919954108s
+Current replicas: 6
+Scale up cooldown: 9s remaining
+
+--- Autoscaler Check ---
+Queue length: 40.0
+P99 latency: 0.1965602919954108s
+Current replicas: 6
+Scale up cooldown: 4s remaining
+
+--- Autoscaler Check ---
+Queue length: 40.0
+P99 latency: 0.1965602919954108s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 40.0
+P99 latency: 0.1965602919954108s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 40.0
+P99 latency: 0.1965602919954108s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 37.0
+P99 latency: 0.19453462499950547s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 37.0
+P99 latency: 0.19453462499950547s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 47.0
+P99 latency: 0.1858863340021344s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 47.0
+P99 latency: 0.1858863340021344s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 47.0
+P99 latency: 0.1858863340021344s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 47.0
+P99 latency: 0.1858863340021344s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 20.0
+P99 latency: 0.18008466699393466s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 20.0
+P99 latency: 0.18008466699393466s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 20.0
+P99 latency: 0.18008466699393466s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.0s
+Current replicas: 6
+Scaling DOWN: 6 → 5
+Scaled to 5 replicas
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.0s
+Current replicas: 5
+Scale down cooldown: 24s remaining
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.0s
+Current replicas: 5
+Scale down cooldown: 19s remaining
+
+--- Autoscaler Check ---
+Queue length: 35.0
+P99 latency: 0.186545082993689s
+Current replicas: 5
+Scaling UP: 5 → 6
+Scaled to 6 replicas
+
+--- Autoscaler Check ---
+Queue length: 35.0
+P99 latency: 0.186545082993689s
+Current replicas: 6
+Scale up cooldown: 9s remaining
+
+--- Autoscaler Check ---
+Queue length: 46.0
+P99 latency: 0.19035612500738353s
+Current replicas: 6
+Scale up cooldown: 4s remaining
+
+--- Autoscaler Check ---
+Queue length: 46.0
+P99 latency: 0.19035612500738353s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 46.0
+P99 latency: 0.19035612500738353s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 46.0
+P99 latency: 0.19035612500738353s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 36.0
+P99 latency: 0.21664095800952055s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 36.0
+P99 latency: 0.21664095800952055s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 42.0
+P99 latency: 0.18683275100192986s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 42.0
+P99 latency: 0.18683275100192986s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 42.0
+P99 latency: 0.18683275100192986s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 42.0
+P99 latency: 0.18683275100192986s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 17.0
+P99 latency: 0.18426837500010151s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 17.0
+P99 latency: 0.18426837500010151s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 17.0
+P99 latency: 0.18426837500010151s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 17.0
+P99 latency: 0.1846843329985859s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 17.0
+P99 latency: 0.1846843329985859s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 17.0
+P99 latency: 0.1846843329985859s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 17.0
+P99 latency: 0.19089004199486226s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 17.0
+P99 latency: 0.19089004199486226s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 17.0
+P99 latency: 0.19089004199486226s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 16.0
+P99 latency: 0.18704241700470448s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 16.0
+P99 latency: 0.18704241700470448s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 50.0
+P99 latency: 0.19056724999973085s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 50.0
+P99 latency: 0.19056724999973085s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 50.0
+P99 latency: 0.19056724999973085s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 50.0
+P99 latency: 0.19056724999973085s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.0s
+Current replicas: 6
+Scaling DOWN: 6 → 5
+Scaled to 5 replicas
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.0s
+Current replicas: 5
+Scale down cooldown: 24s remaining
+
+--- Autoscaler Check ---
+Queue length: 37.0
+P99 latency: 0.181160958003602s
+Current replicas: 5
+Scaling UP: 5 → 6
+Scaled to 6 replicas
+
+--- Autoscaler Check ---
+Queue length: 37.0
+P99 latency: 0.181160958003602s
+Current replicas: 6
+Scale up cooldown: 9s remaining
+
+--- Autoscaler Check ---
+Queue length: 18.0
+P99 latency: 0.24648179100768175s
+Current replicas: 6
+Scale up cooldown: 4s remaining
+
+--- Autoscaler Check ---
+Queue length: 18.0
+P99 latency: 0.24648179100768175s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 18.0
+P99 latency: 0.24648179100768175s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 18.0
+P99 latency: 0.24648179100768175s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 18.0
+P99 latency: 0.24648179100768175s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 20.0
+P99 latency: 0.18900220800423995s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 20.0
+P99 latency: 0.18900220800423995s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 43.0
+P99 latency: 0.1974752499954775s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 43.0
+P99 latency: 0.1974752499954775s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 43.0
+P99 latency: 0.1974752499954775s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 43.0
+P99 latency: 0.1974752499954775s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 43.0
+P99 latency: 0.1873144580022199s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 43.0
+P99 latency: 0.1873144580022199s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 43.0
+P99 latency: 0.1873144580022199s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 13.0
+P99 latency: 0.19014683399291243s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 13.0
+P99 latency: 0.19014683399291243s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 51.0
+P99 latency: 0.18249462499807123s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 51.0
+P99 latency: 0.18249462499807123s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 51.0
+P99 latency: 0.18249462499807123s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 51.0
+P99 latency: 0.18249462499807123s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 32.0
+P99 latency: 0.17122154199751094s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 32.0
+P99 latency: 0.17122154199751094s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 32.0
+P99 latency: 0.17122154199751094s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 46.0
+P99 latency: 0.18984637499670498s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 46.0
+P99 latency: 0.18984637499670498s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 46.0
+P99 latency: 0.18984637499670498s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 18.0
+P99 latency: 0.17407158299465664s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 18.0
+P99 latency: 0.17407158299465664s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 18.0
+P99 latency: 0.17407158299465664s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 45.0
+P99 latency: 0.1857114169979468s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 45.0
+P99 latency: 0.1857114169979468s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 45.0
+P99 latency: 0.1857114169979468s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.0s
+Current replicas: 6
+Scaling DOWN: 6 → 5
+Scaled to 5 replicas
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.0s
+Current replicas: 5
+Scale down cooldown: 24s remaining
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.0s
+Current replicas: 5
+Scale down cooldown: 19s remaining
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.0s
+Current replicas: 5
+Scale down cooldown: 14s remaining
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.0s
+Current replicas: 5
+Scale down cooldown: 9s remaining
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.0s
+Current replicas: 5
+Scale down cooldown: 4s remaining
+
+--- Autoscaler Check ---
+Queue length: 40.0
+P99 latency: 0.20845283300150186s
+Current replicas: 5
+Scaling UP: 5 → 6
+Scaled to 6 replicas
+
+--- Autoscaler Check ---
+Queue length: 40.0
+P99 latency: 0.20845283300150186s
+Current replicas: 6
+Scale up cooldown: 9s remaining
+
+--- Autoscaler Check ---
+Queue length: 40.0
+P99 latency: 0.20845283300150186s
+Current replicas: 6
+Scale up cooldown: 4s remaining
+
+--- Autoscaler Check ---
+Queue length: 17.0
+P99 latency: 0.21941245900234208s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 17.0
+P99 latency: 0.21941245900234208s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 17.0
+P99 latency: 0.21941245900234208s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.0s
+Current replicas: 6
+Scaling DOWN: 6 → 5
+Scaled to 5 replicas
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.0s
+Current replicas: 5
+Scale down cooldown: 24s remaining
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.0s
+Current replicas: 5
+Scale down cooldown: 19s remaining
+
+--- Autoscaler Check ---
+Queue length: 29.0
+P99 latency: 0.18791387500823475s
+Current replicas: 5
+Scaling UP: 5 → 6
+Scaled to 6 replicas
+
+--- Autoscaler Check ---
+Queue length: 29.0
+P99 latency: 0.18791387500823475s
+Current replicas: 6
+Scale up cooldown: 9s remaining
+
+--- Autoscaler Check ---
+Queue length: 29.0
+P99 latency: 0.18791387500823475s
+Current replicas: 6
+Scale up cooldown: 4s remaining
+
+--- Autoscaler Check ---
+Queue length: 49.0
+P99 latency: 0.2302147500013234s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 49.0
+P99 latency: 0.2302147500013234s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 49.0
+P99 latency: 0.2302147500013234s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 17.0
+P99 latency: 0.1731534590071533s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 17.0
+P99 latency: 0.1731534590071533s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 19.0
+P99 latency: 0.18410220800433308s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 19.0
+P99 latency: 0.18410220800433308s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 19.0
+P99 latency: 0.18410220800433308s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 19.0
+P99 latency: 0.18410220800433308s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 14.0
+P99 latency: 0.1871116670081392s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 14.0
+P99 latency: 0.1871116670081392s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 46.0
+P99 latency: 0.18651024899736512s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 46.0
+P99 latency: 0.18651024899736512s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 46.0
+P99 latency: 0.18651024899736512s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 38.0
+P99 latency: 0.16362366700195707s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 38.0
+P99 latency: 0.16362366700195707s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 48.0
+P99 latency: 0.18400787501013838s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 48.0
+P99 latency: 0.18400787501013838s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 48.0
+P99 latency: 0.18400787501013838s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 48.0
+P99 latency: 0.18400787501013838s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 41.0
+P99 latency: 0.18860487500205636s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 41.0
+P99 latency: 0.18860487500205636s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 42.0
+P99 latency: 0.1810057500115363s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 42.0
+P99 latency: 0.1810057500115363s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 42.0
+P99 latency: 0.1810057500115363s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 42.0
+P99 latency: 0.1810057500115363s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 20.0
+P99 latency: 0.27996037500270177s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 20.0
+P99 latency: 0.27996037500270177s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 20.0
+P99 latency: 0.27996037500270177s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 20.0
+P99 latency: 0.27996037500270177s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 49.0
+P99 latency: 0.2309301250061253s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 49.0
+P99 latency: 0.2309301250061253s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 49.0
+P99 latency: 0.2309301250061253s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.0s
+Current replicas: 6
+Scaling DOWN: 6 → 5
+Scaled to 5 replicas
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.0s
+Current replicas: 5
+Scale down cooldown: 24s remaining
+
+--- Autoscaler Check ---
+Queue length: 53.0
+P99 latency: 0.1960848329908913s
+Current replicas: 5
+Scaling UP: 5 → 6
+Scaled to 6 replicas
+
+--- Autoscaler Check ---
+Queue length: 53.0
+P99 latency: 0.1960848329908913s
+Current replicas: 6
+Scale up cooldown: 9s remaining
+
+--- Autoscaler Check ---
+Queue length: 53.0
+P99 latency: 0.1960848329908913s
+Current replicas: 6
+Scale up cooldown: 4s remaining
+
+--- Autoscaler Check ---
+Queue length: 10.0
+P99 latency: 0.2171099580009468s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 10.0
+P99 latency: 0.2171099580009468s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 10.0
+P99 latency: 0.2171099580009468s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 45.0
+P99 latency: 0.19329812499927357s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 45.0
+P99 latency: 0.19329812499927357s
+Current replicas: 6
+Already at MAX replicas
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.20059166698774789s
+Current replicas: 6
+Scaling DOWN: 6 → 5
+Scaled to 5 replicas
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.20059166698774789s
+Current replicas: 5
+Scale down cooldown: 24s remaining
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.20059166698774789s
+Current replicas: 5
+Scale down cooldown: 19s remaining
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.20059166698774789s
+Current replicas: 5
+Scale down cooldown: 14s remaining
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.20059166698774789s
+Current replicas: 5
+Scale down cooldown: 9s remaining
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.20059166698774789s
+Current replicas: 5
+Scale down cooldown: 4s remaining
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.20059166698774789s
+Current replicas: 5
+Scaling DOWN: 5 → 4
+Scaled to 4 replicas
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.20059166698774789s
+Current replicas: 4
+Scale down cooldown: 24s remaining
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.20059166698774789s
+Current replicas: 4
+Scale down cooldown: 19s remaining
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.20059166698774789s
+Current replicas: 4
+Scale down cooldown: 14s remaining
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.20059166698774789s
+Current replicas: 4
+Scale down cooldown: 9s remaining
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.20059166698774789s
+Current replicas: 4
+Scale down cooldown: 4s remaining
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.20059166698774789s
+Current replicas: 4
+Scaling DOWN: 4 → 3
+Scaled to 3 replicas
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.20059166698774789s
+Current replicas: 3
+Scale down cooldown: 24s remaining
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.20059166698774789s
+Current replicas: 3
+Scale down cooldown: 19s remaining
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.20059166698774789s
+Current replicas: 3
+Scale down cooldown: 14s remaining
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.20059166698774789s
+Current replicas: 3
+Scale down cooldown: 9s remaining
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.20059166698774789s
+Current replicas: 3
+Scale down cooldown: 4s remaining
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.20059166698774789s
+Current replicas: 3
+Scaling DOWN: 3 → 2
+Scaled to 2 replicas
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.20059166698774789s
+Current replicas: 2
+Scale down cooldown: 24s remaining
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.20059166698774789s
+Current replicas: 2
+Scale down cooldown: 19s remaining
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.20059166698774789s
+Current replicas: 2
+Scale down cooldown: 14s remaining
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.20059166698774789s
+Current replicas: 2
+Scale down cooldown: 9s remaining
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.20059166698774789s
+Current replicas: 2
+Scale down cooldown: 4s remaining
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.20059166698774789s
+Current replicas: 2
+Scaling DOWN: 2 → 1
+Scaled to 1 replicas
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.20059166698774789s
+Current replicas: 1
+No scaling needed
+
+--- Autoscaler Check ---
+Queue length: 0.0
+P99 latency: 0.20059166698774789s
+Current replicas: 1
+No scaling needed
